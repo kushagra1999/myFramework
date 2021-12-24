@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE229D2775D69F00296AF4 /* myFramework.docc */; };
 		0BEE229F2775D69F00296AF4 /* myFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEE229C2775D69F00296AF4 /* myFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */; };
+		0BEE22A82775D73F00296AF4 /* myFrameworkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BEE22992775D69F00296AF4 /* myFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = myFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEE229C2775D69F00296AF4 /* myFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myFramework.h; sourceTree = "<group>"; };
 		0BEE229D2775D69F00296AF4 /* myFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = myFramework.docc; sourceTree = "<group>"; };
+		0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFrameworkView.swift; sourceTree = "<group>"; };
+		0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myFrameworkView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 			children = (
 				0BEE229C2775D69F00296AF4 /* myFramework.h */,
 				0BEE229D2775D69F00296AF4 /* myFramework.docc */,
+				0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */,
+				0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */,
 			);
 			path = myFramework;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEE22A82775D73F00296AF4 /* myFrameworkView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */,
+				0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
