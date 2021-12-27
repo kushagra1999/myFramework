@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0B11D5277A1F120020443E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0B11D4277A1F120020443E /* SDWebImage */; };
+		0B0B11D7277A215B0020443E /* baseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B11D6277A215B0020443E /* baseView.swift */; };
+		0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6166D52779C947007D8FEF /* CarouselTemplate.swift */; };
+		0B6166D82779C947007D8FEF /* CarouselTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B6166D62779C947007D8FEF /* CarouselTemplate.xib */; };
 		0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE229D2775D69F00296AF4 /* myFramework.docc */; };
 		0BEE229F2775D69F00296AF4 /* myFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEE229C2775D69F00296AF4 /* myFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */; };
@@ -14,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0B11D6277A215B0020443E /* baseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseView.swift; sourceTree = "<group>"; };
+		0B6166D52779C947007D8FEF /* CarouselTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTemplate.swift; sourceTree = "<group>"; };
+		0B6166D62779C947007D8FEF /* CarouselTemplate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselTemplate.xib; sourceTree = "<group>"; };
 		0BEE22992775D69F00296AF4 /* myFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = myFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEE229C2775D69F00296AF4 /* myFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myFramework.h; sourceTree = "<group>"; };
 		0BEE229D2775D69F00296AF4 /* myFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = myFramework.docc; sourceTree = "<group>"; };
@@ -26,12 +33,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0B11D5277A1F120020443E /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B6166D42779C8E4007D8FEF /* Content-Slider */ = {
+			isa = PBXGroup;
+			children = (
+				0B6166D52779C947007D8FEF /* CarouselTemplate.swift */,
+				0B6166D62779C947007D8FEF /* CarouselTemplate.xib */,
+			);
+			path = "Content-Slider";
+			sourceTree = "<group>";
+		};
 		0BEE228F2775D69F00296AF4 = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				0BEE229C2775D69F00296AF4 /* myFramework.h */,
+				0B0B11D6277A215B0020443E /* baseView.swift */,
 				0BEE229D2775D69F00296AF4 /* myFramework.docc */,
 				0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */,
 				0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */,
+				0B6166D42779C8E4007D8FEF /* Content-Slider */,
 			);
 			path = myFramework;
 			sourceTree = "<group>";
@@ -87,6 +106,9 @@
 			dependencies = (
 			);
 			name = myFramework;
+			packageProductDependencies = (
+				0B0B11D4277A1F120020443E /* SDWebImage */,
+			);
 			productName = myFramework;
 			productReference = 0BEE22992775D69F00296AF4 /* myFramework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -114,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 0BEE228F2775D69F00296AF4;
+			packageReferences = (
+				0B0B11D3277A1F120020443E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 0BEE229A2775D69F00296AF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BEE22A82775D73F00296AF4 /* myFrameworkView.xib in Resources */,
+				0B6166D82779C947007D8FEF /* CarouselTemplate.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +167,8 @@
 			files = (
 				0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */,
 				0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */,
+				0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */,
+				0B0B11D7277A215B0020443E /* baseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B0B11D3277A1F120020443E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B0B11D4277A1F120020443E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B0B11D3277A1F120020443E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BEE22902775D69F00296AF4 /* Project object */;
 }
