@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		0B0B11D5277A1F120020443E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0B11D4277A1F120020443E /* SDWebImage */; };
 		0B0B11D7277A215B0020443E /* baseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B11D6277A215B0020443E /* baseView.swift */; };
+		0B315A9D277B000F00DF9BA9 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B315A9C277B000F00DF9BA9 /* Carousel.swift */; };
+		0B315A9F277B008D00DF9BA9 /* CarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B315A9E277B008D00DF9BA9 /* CarouselLayout.swift */; };
 		0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6166D52779C947007D8FEF /* CarouselTemplate.swift */; };
-		0B6166D82779C947007D8FEF /* CarouselTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B6166D62779C947007D8FEF /* CarouselTemplate.xib */; };
+		0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D340D277B95AA00A494F9 /* timerViewController.swift */; };
+		0B8D3410277B95AA00A494F9 /* timerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D340E277B95AA00A494F9 /* timerViewController.xib */; };
+		0B98EA2D277DBF9F00405F3C /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B98EA2C277DBF9F00405F3C /* Properties.swift */; };
 		0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE229D2775D69F00296AF4 /* myFramework.docc */; };
 		0BEE229F2775D69F00296AF4 /* myFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEE229C2775D69F00296AF4 /* myFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */; };
@@ -19,8 +23,12 @@
 
 /* Begin PBXFileReference section */
 		0B0B11D6277A215B0020443E /* baseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseView.swift; sourceTree = "<group>"; };
+		0B315A9C277B000F00DF9BA9 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		0B315A9E277B008D00DF9BA9 /* CarouselLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselLayout.swift; sourceTree = "<group>"; };
 		0B6166D52779C947007D8FEF /* CarouselTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTemplate.swift; sourceTree = "<group>"; };
-		0B6166D62779C947007D8FEF /* CarouselTemplate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselTemplate.xib; sourceTree = "<group>"; };
+		0B8D340D277B95AA00A494F9 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
+		0B8D340E277B95AA00A494F9 /* timerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timerViewController.xib; sourceTree = "<group>"; };
+		0B98EA2C277DBF9F00405F3C /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		0BEE22992775D69F00296AF4 /* myFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = myFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEE229C2775D69F00296AF4 /* myFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myFramework.h; sourceTree = "<group>"; };
 		0BEE229D2775D69F00296AF4 /* myFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = myFramework.docc; sourceTree = "<group>"; };
@@ -40,11 +48,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B315AA0277B1B3400DF9BA9 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				0B8D340D277B95AA00A494F9 /* timerViewController.swift */,
+				0B8D340E277B95AA00A494F9 /* timerViewController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		0B315AA1277B211F00DF9BA9 /* Basic Template */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */,
+				0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */,
+			);
+			path = "Basic Template";
+			sourceTree = "<group>";
+		};
 		0B6166D42779C8E4007D8FEF /* Content-Slider */ = {
 			isa = PBXGroup;
 			children = (
 				0B6166D52779C947007D8FEF /* CarouselTemplate.swift */,
-				0B6166D62779C947007D8FEF /* CarouselTemplate.xib */,
+				0B315A9C277B000F00DF9BA9 /* Carousel.swift */,
+				0B315A9E277B008D00DF9BA9 /* CarouselLayout.swift */,
 			);
 			path = "Content-Slider";
 			sourceTree = "<group>";
@@ -70,10 +97,11 @@
 			children = (
 				0BEE229C2775D69F00296AF4 /* myFramework.h */,
 				0B0B11D6277A215B0020443E /* baseView.swift */,
-				0BEE229D2775D69F00296AF4 /* myFramework.docc */,
-				0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */,
-				0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */,
+				0B98EA2C277DBF9F00405F3C /* Properties.swift */,
+				0B315AA1277B211F00DF9BA9 /* Basic Template */,
 				0B6166D42779C8E4007D8FEF /* Content-Slider */,
+				0B315AA0277B1B3400DF9BA9 /* Timer */,
+				0BEE229D2775D69F00296AF4 /* myFramework.docc */,
 			);
 			path = myFramework;
 			sourceTree = "<group>";
@@ -153,8 +181,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8D3410277B95AA00A494F9 /* timerViewController.xib in Resources */,
 				0BEE22A82775D73F00296AF4 /* myFrameworkView.xib in Resources */,
-				0B6166D82779C947007D8FEF /* CarouselTemplate.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B98EA2D277DBF9F00405F3C /* Properties.swift in Sources */,
 				0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */,
+				0B315A9F277B008D00DF9BA9 /* CarouselLayout.swift in Sources */,
 				0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */,
+				0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */,
 				0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */,
+				0B315A9D277B000F00DF9BA9 /* Carousel.swift in Sources */,
 				0B0B11D7277A215B0020443E /* baseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
