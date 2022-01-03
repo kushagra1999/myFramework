@@ -5,6 +5,7 @@ import UserNotificationsUI
 open class baseView: UIViewController, UNNotificationContentExtension {
     var label:UILabel!
     var orientation: String = ""
+
     open override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -15,19 +16,7 @@ open class baseView: UIViewController, UNNotificationContentExtension {
                 label.text = myText
                 self.view.addSubview(label)
     }
-    public func get_records(myData:String){
-      let data = myData.data(using: .utf8)
-        
-        do{
-        let contentslider = try JSONDecoder().decode(ContentSlider.self,from: data!)
-   
-            self.orientation = contentslider.orientation
-            
-        } catch {
-                print(error)
-            }
-        showLabel(myText: self.orientation)
-    }
+
     private func setup(msg:String, data:String) {
  
         
@@ -45,8 +34,10 @@ open class baseView: UIViewController, UNNotificationContentExtension {
                         secondVC.view.frame = self.view.bounds
         }
                     if msg == "timer-template"{
+                        
 //                        timerViewController().filldata(data: data)
-                        let secondVC = timerViewController(data: "kusaaaaa")
+                        let secondVC = timerViewController()
+                        secondVC.myName = data
                         addChild(secondVC)
                         self.view.addSubview(secondVC.view)
                         secondVC.view.frame = self.view.bounds
@@ -56,8 +47,8 @@ open class baseView: UIViewController, UNNotificationContentExtension {
         }
     public func didReceive(_ notification: UNNotification) {
         let content = notification.request.content.userInfo as? [String:Any]
-//        setup(msg: content?["ct_template"] as! String, data: content?["ct_data"] as! String)
-        get_records(myData: content?["ct_data"] as! String)
+        setup(msg: content?["ct_template"] as! String, data: content?["ct_data"] as! String)
+
         
     }
 }

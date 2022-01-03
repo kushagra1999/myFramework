@@ -14,7 +14,7 @@
 		0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6166D52779C947007D8FEF /* CarouselTemplate.swift */; };
 		0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D340D277B95AA00A494F9 /* timerViewController.swift */; };
 		0B8D3410277B95AA00A494F9 /* timerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D340E277B95AA00A494F9 /* timerViewController.xib */; };
-		0B98EA2D277DBF9F00405F3C /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B98EA2C277DBF9F00405F3C /* Properties.swift */; };
+		0BC6A1DE27830ADB0093B5E1 /* timerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6A1DD27830ADB0093B5E1 /* timerProperties.swift */; };
 		0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE229D2775D69F00296AF4 /* myFramework.docc */; };
 		0BEE229F2775D69F00296AF4 /* myFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEE229C2775D69F00296AF4 /* myFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */; };
@@ -28,7 +28,7 @@
 		0B6166D52779C947007D8FEF /* CarouselTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTemplate.swift; sourceTree = "<group>"; };
 		0B8D340D277B95AA00A494F9 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
 		0B8D340E277B95AA00A494F9 /* timerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timerViewController.xib; sourceTree = "<group>"; };
-		0B98EA2C277DBF9F00405F3C /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		0BC6A1DD27830ADB0093B5E1 /* timerProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerProperties.swift; sourceTree = "<group>"; };
 		0BEE22992775D69F00296AF4 /* myFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = myFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEE229C2775D69F00296AF4 /* myFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myFramework.h; sourceTree = "<group>"; };
 		0BEE229D2775D69F00296AF4 /* myFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = myFramework.docc; sourceTree = "<group>"; };
@@ -53,6 +53,7 @@
 			children = (
 				0B8D340D277B95AA00A494F9 /* timerViewController.swift */,
 				0B8D340E277B95AA00A494F9 /* timerViewController.xib */,
+				0BC6A1DD27830ADB0093B5E1 /* timerProperties.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -97,7 +98,6 @@
 			children = (
 				0BEE229C2775D69F00296AF4 /* myFramework.h */,
 				0B0B11D6277A215B0020443E /* baseView.swift */,
-				0B98EA2C277DBF9F00405F3C /* Properties.swift */,
 				0B315AA1277B211F00DF9BA9 /* Basic Template */,
 				0B6166D42779C8E4007D8FEF /* Content-Slider */,
 				0B315AA0277B1B3400DF9BA9 /* Timer */,
@@ -193,13 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B98EA2D277DBF9F00405F3C /* Properties.swift in Sources */,
 				0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */,
 				0B315A9F277B008D00DF9BA9 /* CarouselLayout.swift in Sources */,
 				0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */,
 				0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */,
 				0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */,
 				0B315A9D277B000F00DF9BA9 /* Carousel.swift in Sources */,
+				0BC6A1DE27830ADB0093B5E1 /* timerProperties.swift in Sources */,
 				0B0B11D7277A215B0020443E /* baseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

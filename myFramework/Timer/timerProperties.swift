@@ -1,8 +1,8 @@
 //
-//  Properties.swift
+//  timerProperties.swift
 //  myFramework
 //
-//  Created by Kushagra Mishra on 30/12/21.
+//  Created by Kushagra Mishra on 03/01/22.
 //
 
 import Foundation
