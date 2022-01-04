@@ -2,17 +2,23 @@ import UIKit
 import SDWebImage
 
 class Carousel: UIView {
+//    let label = UILabel(frame: CGRect(x: x, y: y, width: UIScreen.main.bounds.width, height: height))
     private lazy var collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: CarouselLayout()
     )
     
     var urls: [URL] = []
+    var captions: [String] = []
+    var subcaptions: [String] = []
     var selectedIndex: Int = 0
+    var currentText: String = ""
     private var timer: Timer?
     
-    public init(frame: CGRect, urls: [URL]) {
+    public init(frame: CGRect, urls: [URL], captions: [String], subcaptions: [String]) {
         self.urls = urls
+        self.captions = captions
+        self.subcaptions = subcaptions
         super.init(frame: frame)
         setupView()
     }
@@ -28,7 +34,10 @@ class Carousel: UIView {
         super.init(coder: aDecoder)
         setupView()
     }
-    
+    let x: CGFloat = 0
+    let y: CGFloat = 0
+    let height: CGFloat = 50
+    let subcaptionheight: CGFloat = 20
     private func setupView() {
         collectionView.backgroundColor = .clear
         collectionView.delegate = self
@@ -40,12 +49,30 @@ class Carousel: UIView {
         addSubview(collectionView)
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        
+        let label = UILabel(frame: CGRect(x: x, y: y, width: UIScreen.main.bounds.width, height: height))
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = captions[selectedIndex]
+        label.textAlignment = .center
+        addSubview(label)
+        let subcaptionLabel = UILabel(frame: CGRect(x: x, y: y, width: UIScreen.main.bounds.width, height: subcaptionheight))
+        subcaptionLabel.translatesAutoresizingMaskIntoConstraints = false
+        subcaptionLabel.text = subcaptions[selectedIndex]
+        addSubview(subcaptionLabel)
         NSLayoutConstraint.activate([
+            
             collectionView.topAnchor.constraint(equalTo: topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: label.topAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor)
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            label.topAnchor.constraint(equalTo: collectionView.bottomAnchor),
+            label.leadingAnchor.constraint(equalTo: leadingAnchor),
+            label.trailingAnchor.constraint(equalTo: trailingAnchor),
+            label.bottomAnchor.constraint(equalTo: subcaptionLabel.topAnchor),
+            subcaptionLabel.topAnchor.constraint(equalTo: label.bottomAnchor),
+            subcaptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            subcaptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            subcaptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
+                
         ])
         
         scheduleTimerIfNeeded()
@@ -75,7 +102,7 @@ class Carousel: UIView {
         let index = urls.count > index ? index : 0
         guard selectedIndex != index else { return }
         selectedIndex = index
-        collectionView.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: .centeredHorizontally, animated: true)
+        collectionView.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: .centeredHorizontally, animated: false)
     }
 }
 

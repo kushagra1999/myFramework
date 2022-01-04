@@ -14,7 +14,7 @@
 		0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6166D52779C947007D8FEF /* CarouselTemplate.swift */; };
 		0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D340D277B95AA00A494F9 /* timerViewController.swift */; };
 		0B8D3410277B95AA00A494F9 /* timerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D340E277B95AA00A494F9 /* timerViewController.xib */; };
-		0BC6A1DE27830ADB0093B5E1 /* timerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6A1DD27830ADB0093B5E1 /* timerProperties.swift */; };
+		0BC6A1E027830E6E0093B5E1 /* contentsliderproperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6A1DF27830E6E0093B5E1 /* contentsliderproperties.swift */; };
 		0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE229D2775D69F00296AF4 /* myFramework.docc */; };
 		0BEE229F2775D69F00296AF4 /* myFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEE229C2775D69F00296AF4 /* myFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */; };
@@ -28,7 +28,7 @@
 		0B6166D52779C947007D8FEF /* CarouselTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTemplate.swift; sourceTree = "<group>"; };
 		0B8D340D277B95AA00A494F9 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
 		0B8D340E277B95AA00A494F9 /* timerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timerViewController.xib; sourceTree = "<group>"; };
-		0BC6A1DD27830ADB0093B5E1 /* timerProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerProperties.swift; sourceTree = "<group>"; };
+		0BC6A1DF27830E6E0093B5E1 /* contentsliderproperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentsliderproperties.swift; sourceTree = "<group>"; };
 		0BEE22992775D69F00296AF4 /* myFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = myFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEE229C2775D69F00296AF4 /* myFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myFramework.h; sourceTree = "<group>"; };
 		0BEE229D2775D69F00296AF4 /* myFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = myFramework.docc; sourceTree = "<group>"; };
@@ -53,7 +53,6 @@
 			children = (
 				0B8D340D277B95AA00A494F9 /* timerViewController.swift */,
 				0B8D340E277B95AA00A494F9 /* timerViewController.xib */,
-				0BC6A1DD27830ADB0093B5E1 /* timerProperties.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -73,6 +72,7 @@
 				0B6166D52779C947007D8FEF /* CarouselTemplate.swift */,
 				0B315A9C277B000F00DF9BA9 /* Carousel.swift */,
 				0B315A9E277B008D00DF9BA9 /* CarouselLayout.swift */,
+				0BC6A1DF27830E6E0093B5E1 /* contentsliderproperties.swift */,
 			);
 			path = "Content-Slider";
 			sourceTree = "<group>";
@@ -195,11 +195,11 @@
 			files = (
 				0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */,
 				0B315A9F277B008D00DF9BA9 /* CarouselLayout.swift in Sources */,
+				0BC6A1E027830E6E0093B5E1 /* contentsliderproperties.swift in Sources */,
 				0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */,
 				0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */,
 				0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */,
 				0B315A9D277B000F00DF9BA9 /* Carousel.swift in Sources */,
-				0BC6A1DE27830ADB0093B5E1 /* timerProperties.swift in Sources */,
 				0B0B11D7277A215B0020443E /* baseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,26 +1,32 @@
-//
-//  CarouselTemplate.swift
-//  myFramework
-//
-//  Created by Kushagra Mishra on 27/12/21.
-//
-
 import UIKit
 
-protocol BaseTemplate{
-    
-}
-class CarouselTemplate: UIViewController, BaseTemplate {
-    var myData: String?
-    let urls: [URL] = [
-        URL(string: "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png")!,
-        URL(string: "https://cdn.vox-cdn.com/thumbor/bzPOaj6Cyr_s0X8BnzgnJ3s29fQ=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22651022/TRA8660_105_TRL_comp_v004.1092.jpg")!,
-        URL(string: "https://www.denofgeek.com/wp-content/uploads/2021/10/spider-man-no-way-home-iron-spider-tom-holland-sony.jpg?resize=768%2C432")!
-    ]
-    lazy var carousel = Carousel(frame: .zero, urls: urls)
-    
+class CarouselTemplate: UIViewController {
+    var myData: String = ""
+    var myurls = [URL]()
+    var captionarray = [String]()
+    var subcaptionarray = [String]()
+    lazy var carousel = Carousel(frame: .zero, urls: myurls, captions: captionarray, subcaptions: subcaptionarray)
+    public func get_records(myData:String){
+      let data = myData.data(using: .utf8)
+        
+        do{
+        let contentslider = try JSONDecoder().decode(ContentSlider.self,from: data!)
+            for slides in contentslider.items{
+                myurls.append(URL(string: slides.imageUrl)!)
+                captionarray.append(slides.caption)
+                subcaptionarray.append(slides.subcaption)
+            }
+//            self.orientation = contentslider.orientation
+            
+            
+        } catch {
+                print(error)
+            }
+ 
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        get_records(myData: myData)
         setupHierarchy()
         setupComponents()
         setupConstraints()

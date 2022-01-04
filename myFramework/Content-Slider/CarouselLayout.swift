@@ -1,9 +1,4 @@
-//
-//  CarouselLayout.swift
-//  myFramework
-//
-//  Created by Kushagra Mishra on 28/12/21.
-//
+
 
 import UIKit
 
