@@ -8,32 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		0B0B11D5277A1F120020443E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B0B11D4277A1F120020443E /* SDWebImage */; };
-		0B0B11D7277A215B0020443E /* baseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B11D6277A215B0020443E /* baseView.swift */; };
+		0B0B11D7277A215B0020443E /* CTNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B11D6277A215B0020443E /* CTNotificationViewController.swift */; };
+		0B1898F9278D80E3000A0169 /* CTCaptionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1898F7278D80E3000A0169 /* CTCaptionImageView.swift */; };
+		0B1898FA278D80E3000A0169 /* CTCaptionImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1898F8278D80E3000A0169 /* CTCaptionImageView.xib */; };
+		0B1898FC278D8281000A0169 /* CTCaptionImageViewproperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1898FB278D8281000A0169 /* CTCaptionImageViewproperties.swift */; };
 		0B315A9D277B000F00DF9BA9 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B315A9C277B000F00DF9BA9 /* Carousel.swift */; };
 		0B315A9F277B008D00DF9BA9 /* CarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B315A9E277B008D00DF9BA9 /* CarouselLayout.swift */; };
 		0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6166D52779C947007D8FEF /* CarouselTemplate.swift */; };
 		0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D340D277B95AA00A494F9 /* timerViewController.swift */; };
 		0B8D3410277B95AA00A494F9 /* timerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D340E277B95AA00A494F9 /* timerViewController.xib */; };
-		0BC6A1E027830E6E0093B5E1 /* contentsliderproperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6A1DF27830E6E0093B5E1 /* contentsliderproperties.swift */; };
+		0BC6A1E027830E6E0093B5E1 /* Contentsliderproperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6A1DF27830E6E0093B5E1 /* Contentsliderproperties.swift */; };
+		0BE4423A27935C9A00B9FB7F /* ConstantKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4423927935C9A00B9FB7F /* ConstantKeys.swift */; };
 		0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE229D2775D69F00296AF4 /* myFramework.docc */; };
 		0BEE229F2775D69F00296AF4 /* myFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BEE229C2775D69F00296AF4 /* myFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */; };
-		0BEE22A82775D73F00296AF4 /* myFrameworkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B0B11D6277A215B0020443E /* baseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseView.swift; sourceTree = "<group>"; };
+		0B0B11D6277A215B0020443E /* CTNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTNotificationViewController.swift; sourceTree = "<group>"; };
+		0B1898F7278D80E3000A0169 /* CTCaptionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTCaptionImageView.swift; sourceTree = "<group>"; };
+		0B1898F8278D80E3000A0169 /* CTCaptionImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTCaptionImageView.xib; sourceTree = "<group>"; };
+		0B1898FB278D8281000A0169 /* CTCaptionImageViewproperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTCaptionImageViewproperties.swift; sourceTree = "<group>"; };
 		0B315A9C277B000F00DF9BA9 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		0B315A9E277B008D00DF9BA9 /* CarouselLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselLayout.swift; sourceTree = "<group>"; };
 		0B6166D52779C947007D8FEF /* CarouselTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTemplate.swift; sourceTree = "<group>"; };
 		0B8D340D277B95AA00A494F9 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
 		0B8D340E277B95AA00A494F9 /* timerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timerViewController.xib; sourceTree = "<group>"; };
-		0BC6A1DF27830E6E0093B5E1 /* contentsliderproperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentsliderproperties.swift; sourceTree = "<group>"; };
+		0BC6A1DF27830E6E0093B5E1 /* Contentsliderproperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contentsliderproperties.swift; sourceTree = "<group>"; };
+		0BE4423927935C9A00B9FB7F /* ConstantKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantKeys.swift; sourceTree = "<group>"; };
 		0BEE22992775D69F00296AF4 /* myFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = myFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEE229C2775D69F00296AF4 /* myFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myFramework.h; sourceTree = "<group>"; };
 		0BEE229D2775D69F00296AF4 /* myFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = myFramework.docc; sourceTree = "<group>"; };
-		0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFrameworkView.swift; sourceTree = "<group>"; };
-		0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myFrameworkView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,21 +64,22 @@
 		0B315AA1277B211F00DF9BA9 /* Basic Template */ = {
 			isa = PBXGroup;
 			children = (
-				0BEE22A52775D73F00296AF4 /* myFrameworkView.swift */,
-				0BEE22A62775D73F00296AF4 /* myFrameworkView.xib */,
+				0B1898F7278D80E3000A0169 /* CTCaptionImageView.swift */,
+				0B1898FB278D8281000A0169 /* CTCaptionImageViewproperties.swift */,
+				0B1898F8278D80E3000A0169 /* CTCaptionImageView.xib */,
 			);
 			path = "Basic Template";
 			sourceTree = "<group>";
 		};
-		0B6166D42779C8E4007D8FEF /* Content-Slider */ = {
+		0B6166D42779C8E4007D8FEF /* ContentSlider */ = {
 			isa = PBXGroup;
 			children = (
 				0B6166D52779C947007D8FEF /* CarouselTemplate.swift */,
 				0B315A9C277B000F00DF9BA9 /* Carousel.swift */,
 				0B315A9E277B008D00DF9BA9 /* CarouselLayout.swift */,
-				0BC6A1DF27830E6E0093B5E1 /* contentsliderproperties.swift */,
+				0BC6A1DF27830E6E0093B5E1 /* Contentsliderproperties.swift */,
 			);
-			path = "Content-Slider";
+			path = ContentSlider;
 			sourceTree = "<group>";
 		};
 		0BEE228F2775D69F00296AF4 = {
@@ -97,9 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				0BEE229C2775D69F00296AF4 /* myFramework.h */,
-				0B0B11D6277A215B0020443E /* baseView.swift */,
+				0B0B11D6277A215B0020443E /* CTNotificationViewController.swift */,
+				0BE4423927935C9A00B9FB7F /* ConstantKeys.swift */,
 				0B315AA1277B211F00DF9BA9 /* Basic Template */,
-				0B6166D42779C8E4007D8FEF /* Content-Slider */,
+				0B6166D42779C8E4007D8FEF /* ContentSlider */,
 				0B315AA0277B1B3400DF9BA9 /* Timer */,
 				0BEE229D2775D69F00296AF4 /* myFramework.docc */,
 			);
@@ -182,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8D3410277B95AA00A494F9 /* timerViewController.xib in Resources */,
-				0BEE22A82775D73F00296AF4 /* myFrameworkView.xib in Resources */,
+				0B1898FA278D80E3000A0169 /* CTCaptionImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,12 +201,14 @@
 			files = (
 				0BEE229E2775D69F00296AF4 /* myFramework.docc in Sources */,
 				0B315A9F277B008D00DF9BA9 /* CarouselLayout.swift in Sources */,
-				0BC6A1E027830E6E0093B5E1 /* contentsliderproperties.swift in Sources */,
-				0BEE22A72775D73F00296AF4 /* myFrameworkView.swift in Sources */,
+				0BC6A1E027830E6E0093B5E1 /* Contentsliderproperties.swift in Sources */,
+				0B1898FC278D8281000A0169 /* CTCaptionImageViewproperties.swift in Sources */,
 				0B8D340F277B95AA00A494F9 /* timerViewController.swift in Sources */,
+				0BE4423A27935C9A00B9FB7F /* ConstantKeys.swift in Sources */,
 				0B6166D72779C947007D8FEF /* CarouselTemplate.swift in Sources */,
+				0B1898F9278D80E3000A0169 /* CTCaptionImageView.swift in Sources */,
 				0B315A9D277B000F00DF9BA9 /* Carousel.swift in Sources */,
-				0B0B11D7277A215B0020443E /* baseView.swift in Sources */,
+				0B0B11D7277A215B0020443E /* CTNotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -317,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

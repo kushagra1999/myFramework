@@ -1,10 +1,3 @@
-//
-//  myFramework.h
-//  myFramework
-//
-//  Created by Kushagra Mishra on 24/12/21.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for myFramework.
